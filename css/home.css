@@ -78,12 +78,15 @@ body {
   font-weight: 600;
   padding-top: 20px;
   /* Added Later */
-  font-family: Oswald, 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
+  /* font-family: Oswald, 'Open Sans', sans-serif; */
 }
 
 .landing-text h3 {
   padding-top: 20px;
-  font-family: Oswald, 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: Oswald, 'Open Sans', sans-serif; */
 
 }
 
@@ -340,8 +343,10 @@ body {
   font-size: 60px;
   color: #000000;
   padding-bottom: 0;
-  font-family:  Oswald, 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family:  'Open Sans', sans-serif;
+  /* font-family:  Oswald, 'Open Sans', sans-serif; */
+  font-weight: 500;
+  letter-spacing: -1px;;
 }
 
 /*Main header*/
