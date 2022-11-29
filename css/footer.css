@@ -1,0 +1,88 @@
+/*Footer CSS */
+
+footer {
+    color: white;
+    width: 100%;
+    padding: 35px 30px 20px 30px;
+    background-color: #141d26;
+    font-weight: 200;
+    font-size: 14px;
+    background-image: url(../../images/website3/assets/footer_map.png);
+    background-size: cover;                  
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.3s ease 0s;
+  
+}
+
+/*Highlight effect for anchors*/
+footer a {
+  color:rgba(255, 255, 255, 0.85);
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Only display twitter feed on larger screens */
+.tweet {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .tweet {
+    display:inline;
+  }
+}
+
+.footer-logo {
+  width: 150px;
+  padding-bottom: 10px;
+  margin-top: -8px;
+}
+
+/*Font Awsome Icons*/
+.fa-phone {
+  color: #a8d5ff;
+  padding-right: 5px;
+}
+
+.fa-envelope {
+  color: #a8d5ff;
+  width: 20px;
+  padding-right: 5px;
+}
+
+.fa-map-marker {
+  color: #a8d5ff;
+  width: 20px;
+  padding-right: 5px;
+}
+
+.no-bullet {
+  padding: 0;
+  list-style: none;
+  line-height:27px;
+}
+
+.fa-ul .middle {
+  margin: 2px 0;
+}
+
+.social-icons .fa {
+  padding: 0 5px;
+}
+
+/* Only display twitter feed on larger screens */
+.tweet {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .tweet {
+    display:inline;
+  }
+  .fa-ul .middle {
+    margin: 10px 0;
+}

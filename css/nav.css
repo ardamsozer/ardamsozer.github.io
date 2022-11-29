@@ -1,0 +1,252 @@
+:root {
+  --transparent-background-font: #eeeeee;
+  --white-background-font: #555555;
+  --logo-color: #346bb4;
+}
+
+/** Header *******************************************/
+.header {
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+}
+
+.header a {
+  color: var(--white-background-font);
+}
+
+.inner-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+  padding: 0 15%;
+  pointer-events: auto;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+#left-header {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+}
+
+#center-header {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  padding-top: 5px;
+}
+
+.nav-button {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1em;
+  white-space: nowrap;
+}
+
+.nav-button:hover {
+  color: var(--logo-color);
+  text-decoration: none;
+}
+
+
+/** Header Top *************************************/
+.transparent .dropdown .nav-button,
+.transparent .dropdown .nav-button:hover,
+.transparent .dropdown .is-active .nav-button {
+  color: rgba(265,265,256,0.85);
+}
+
+.transparent #center-header .nav-button::after {
+  border-color: rgba(265,265,256,0.85) transparent transparent;
+}
+
+
+/** Header Scrolled ********************************/
+.divider {
+  background-color:white;
+  transition: background-color 300ms linear;
+  color: white;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  box-shadow: 0 .2px 3px #aaa;
+}
+
+.header:not(.transparent) .dropdown.menu .nav-button {
+  color: var(--white-background-font);
+}
+
+.header:not(.transparent) #center-header .nav-button::after {
+  border-color: var(--white-background-font) transparent transparent;
+}
+
+.header:not(.transparent) #center-header li.is-active .nav-button,
+.header:not(.transparent) #center-header li:hover .nav-button {
+  color: #356cb4;
+}
+
+.header:not(.transparent) #center-header li.is-active .nav-button::after,
+.header:not(.transparent) #center-header li:hover .nav-button::after {
+  border-color: #356cb4 transparent transparent;
+}
+
+/** Logo ********************************************/
+#top-logo {
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+
+.nav-logo {
+  position: relative;
+  display: inherit;
+  align-items: center;
+  /* content: url(../pics/logo.png); */
+  /* content: url(../../images/website3/tarjimlylogos/logo-bgTarjimly.png); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 92px;
+  margin-top: 20px;
+}
+
+.nav-logo-scroll {
+  position: relative;
+  display: inherit;
+  align-items: center;
+  /* content: url(../pics/logo.png); */
+  /* content: url(../../images/tarjimlyLogos/SmileLogoWideWordmark.png); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  top:3px;
+}
+
+
+/** Dropdown Content ************************************/
+.dropdown-content {
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.dropdown-content li {
+  list-style-type: none;
+}
+
+.dropdown-content a {
+  white-space: nowrap;
+  min-width: 180px;
+  float: none;
+  color: #333;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dropdown-content a:hover {
+  color: var(--logo-color);
+}
+
+.bottom-border {
+  border-bottom: 1px solid #ddd;
+}
+
+
+/** Mobile Expander *************************************/
+.custom-toggler {
+  display: flex;
+  align-items: center;
+}
+
+.transparent .menu-icon::after {
+  background: #ddd;
+  box-shadow: 0 7px 0 var(--transparent-background-font), 0 14px 0 var(--transparent-background-font);
+}
+
+.header:not(.transparent) .menu-icon::after {
+  background: var(--logo-color);
+  box-shadow: 0 7px 0 var(--logo-color), 0 14px 0 var(--logo-color);
+}
+
+
+/** Mobile **********************************************/
+@media screen and (max-width: 900px) {
+  .inner-header {
+    padding: 0 5%;
+  }
+
+  #left-header {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nav-logo {
+    content: url(../../images/tarjimlyLogos/SmileLogoWhiteWideWordmark.png);
+    height: 40px;
+    margin-top: 0;
+  }
+
+  .inner-header {
+    padding: 0 30px;
+  }
+
+  #center-header {
+    background-color: white;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    position: absolute;
+    top: 70px;
+  }
+
+  .transparent #center-header {
+    border-radius: 5px;
+    left: 5%;
+    right: 5%;
+  }
+  
+  .dropdown.menu {
+    box-shadow: 0 .2px 3px #aaa;
+  }
+
+  #center-header > li {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  #center-header .nav-button {
+    color: var(--white-background-font);
+  }
+
+  #center-header .opens-right.is-active .nav-button::after,
+  #center-header .opens-inner .nav-button::after {
+    border-color: var(--white-background-font) transparent transparent;
+  }
+
+  #center-header .opens-right .nav-button::after {
+    border-color: transparent transparent transparent var(--white-background-font);
+  }
+
+  #center-header .dropdown-content {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border: 0;
+    text-transform: none;
+    padding-left: 20px;
+  }
+}
