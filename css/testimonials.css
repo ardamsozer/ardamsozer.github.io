@@ -8003,7 +8003,7 @@ input:checked+.product__size-label {
     text-align: center;
     /* letter-spacing: 2px; */
     z-index: 1;
-    font-family:  'Open Sans', sans-serif;
+    /* font-family:  'Open Sans', sans-serif; */
     font-weight: 500;
 
 }
