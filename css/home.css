@@ -339,14 +339,11 @@ body {
 
 /*Light blue header*/
 .section-header-1 {
-  padding-top: 50px;
-  font-size: 60px;
-  color: #000000;
+  margin-top: -6px;
+  font-weight: 200;
+  font-size: 20px;
+  color: #76B2DE;
   padding-bottom: 0;
-  font-family:  'Open Sans', sans-serif;
-  /* font-family:  Oswald, 'Open Sans', sans-serif; */
-  font-weight: 500;
-  letter-spacing: -1px;;
 }
 
 /*Main header*/
@@ -378,17 +375,33 @@ body {
   padding-bottom: 0;
 }
 
+/*Watermark*/
+.section-header-5 {
+  position: absolute;
+  font-weight: 800;
+  font-size: 65px;
+  color: black;
+  /* top: -26px; */
+}
+
 @media only screen and (min-width: 576px) {
   .section-header-1 {
-    font-size: 48px;
+    font-size: 24px;
     margin-top: 20px;
-    text-align: center;
+    /* font-size: 48px;
+    margin-top: 20px;
+    text-align: center; */
   }
   .section-header-2 {
     font-size: 28px;
     margin-top: -8px;
   }
   .section-header-3 {
+    font-size: 115px;
+    margin-top: 10px;
+  }
+
+  .section-header-5 {
     font-size: 115px;
     margin-top: 10px;
   }
@@ -530,6 +543,10 @@ a {
 /*Media queries for larger screens*/
 @media only screen and (min-width: 768px) {
   .pd-top-bottom {
+    padding: 0px;
+    padding-top: 300px;
+  }
+  .pd-top-bottom-2 {
     padding: 0px;
   }
 }
