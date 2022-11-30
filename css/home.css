@@ -377,7 +377,8 @@ body {
 
 /*Watermark*/
 .section-header-5 {
-  position: absolute;
+  position: relative;
+  /* position: absolute; */
   font-weight: 800;
   font-size: 65px;
   color: black;
@@ -544,12 +545,14 @@ a {
 @media only screen and (min-width: 768px) {
   .pd-top-bottom {
     padding: 0px;
-    padding-top: 300px;
+    /* padding-top: 300px; */
   }
   .pd-top-bottom-2 {
     padding: 0px;
   }
 }
+
+
 
 .pd-bottom {
   padding-bottom: 5%;
