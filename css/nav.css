@@ -109,24 +109,26 @@
   position: relative;
   display: inherit;
   align-items: center;
-  /* content: url(../pics/logo.png); */
+  content: url(../pics/M.png);
   /* content: url(../../images/website3/tarjimlylogos/logo-bgTarjimly.png); */
   background-repeat: no-repeat;
   background-size: contain;
-  height: 92px;
+  height: 110px;
   margin-top: 20px;
+  top:-10px;
 }
 
 .nav-logo-scroll {
   position: relative;
   display: inherit;
   align-items: center;
-  /* content: url(../pics/logo.png); */
+  content: url(../pics/M.png);
   /* content: url(../../images/tarjimlyLogos/SmileLogoWideWordmark.png); */
   background-repeat: no-repeat;
   background-size: contain;
   height: 40px;
-  top:3px;
+  top:-15px;
+  height: 92px;
 }
 
 
