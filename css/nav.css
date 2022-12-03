@@ -195,7 +195,7 @@
 
 @media screen and (max-width: 640px) {
   .nav-logo {
-    content: url(../../images/tarjimlyLogos/SmileLogoWhiteWideWordmark.png);
+    content: url(../pics/M.png);
     height: 40px;
     margin-top: 0;
   }
