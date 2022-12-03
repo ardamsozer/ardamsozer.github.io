@@ -124,6 +124,10 @@ body {
     font-size: 17px;
   }
 
+  .section-header-5 {
+    font-size:55px;
+  }
+
 }
 
 
@@ -385,6 +389,8 @@ body {
   /* top: -26px; */
 }
 
+
+
 @media only screen and (min-width: 576px) {
   .section-header-1 {
     font-size: 24px;
@@ -403,7 +409,7 @@ body {
   }
 
   .section-header-5 {
-    font-size: 115px;
+    font-size: 105px;
     margin-top: 10px;
   }
 }
