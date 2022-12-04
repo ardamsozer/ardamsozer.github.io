@@ -125,7 +125,7 @@ body {
   }
 
   .section-header-5 {
-    font-size:35px;
+    font-size:45px;
   }
 
 }
@@ -159,9 +159,12 @@ body {
 
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (-width: 767px) {
   .testimonial_images {
     height: 500px;
+  }
+  .img-fluid {
+    padding-left:120px;
   }
 }
 
@@ -384,7 +387,7 @@ body {
   position: relative;
   /* position: absolute; */
   font-weight: 800;
-  font-size: 65px;
+  /* font-size: 65px; */
   color: black;
   /* top: -26px; */
 }
