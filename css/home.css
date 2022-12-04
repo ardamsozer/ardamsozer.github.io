@@ -159,18 +159,22 @@ body {
 
 }
 
-@media only screen and (-width: 767px) {
+@media only screen and (min-width: 767px) {
   .testimonial_images {
     height: 500px;
   }
   .img-fluid {
     padding-left:120px;
+    height:150px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .testimonial_images {
     height: 200px;
+  }
+  .img-fluid {
+    height:100px;
   }
 }
 
