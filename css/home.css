@@ -163,7 +163,7 @@ body {
   .testimonial_images {
     height: 500px;
   }
-  .img-fluid {
+  #nba_img {
     padding-left:120px;
     height:150px;
   }
@@ -173,7 +173,7 @@ body {
   .testimonial_images {
     height: 200px;
   }
-  .img-fluid {
+  #nba_img {
     height:100px;
   }
 }
