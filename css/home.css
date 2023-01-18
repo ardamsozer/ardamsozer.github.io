@@ -11,7 +11,8 @@ html {
 body {
   height: 100%;
   min-height: 100%;
-  font-family: 'Verdana', sans-serif !Important;
+  font-family: 'Helvetica Neue neue', sans-serif;
+  letter-spacing: -0.015em;
   background-color: white !important;
 }
 
@@ -77,22 +78,30 @@ body {
   font-size: 60px;
   font-weight: 600;
   padding-top: 20px;
+  letter-spacing: -0.015em;
   /* Added Later */
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 
-  /* font-family: Oswald, 'Verdana', sans-serif; */
 }
 
 .landing-text h3 {
   padding-top: 20px;
-  font-family: 'Verdana', sans-serif;
-  /* font-family: Oswald, 'Verdana', sans-serif; */
+  font-family: 'Helvetica Neue', sans-serif;
 
 }
 
 .dl-link {
   width:140px;
   padding-top:20px;
+}
+
+.lead {
+  color: #888;
+  font-size: 26px;
+  line-height: 1.1666666667;
+  font-weight: 500;
+  letter-spacing: .009em;
+  font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
 }
 
 @media only screen and (max-width: 576px) {
@@ -391,10 +400,13 @@ body {
   position: relative;
   text-align: center;
   /* position: absolute; */
-  font-weight: 300;
+  /* font-weight: 600; */
   /* font-size: 65px; */
-  color: black;
+  color: rgba(0, 0, 0);
   /* top: -26px; */
+  line-height: 1.05;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 500;
 }
 
 
@@ -417,7 +429,7 @@ body {
   }
 
   .section-header-5 {
-    font-size: 70px;
+    font-size: 90px;
     margin-top: 10px;
   }
 }

@@ -106,20 +106,23 @@
 }
 
 .nav-logo {
-  position: relative;
+  /* used to be relative */
+  position: absolute;
+  left: 20px;
+  top:-30px;  
   display: inherit;
   align-items: center;
   content: url(../pics/M.png);
   /* content: url(../../images/website3/tarjimlylogos/logo-bgTarjimly.png); */
   background-repeat: no-repeat;
   background-size: contain;
-  height: 110px;
+  height: 90px;
   margin-top: 20px;
-  top:-10px;
 }
 
 .nav-logo-scroll {
-  position: relative;
+  position: absolute;
+  left: 20px;
   display: inherit;
   align-items: center;
   content: url(../pics/M.png);
@@ -127,8 +130,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 40px;
-  top:-15px;
-  height: 92px;
+  top:-5px;
+  height: 85px;
 }
 
 
