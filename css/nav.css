@@ -51,6 +51,7 @@
   font-weight: 600;
   padding: 1em;
   white-space: nowrap;
+  font-family: font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
 }
 
 .nav-button:hover {
