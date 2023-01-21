@@ -198,11 +198,12 @@
 }
 
 @media screen and (max-width: 640px) {
-  .nav-logo {
+  /* .nav-logo {
     content: url(../pics/M.png);
     height: 40px;
     margin-top: 30px;
-  }
+
+  } */
 
   .inner-header {
     padding: 0 30px;
