@@ -139,11 +139,15 @@ body {
   }
 
   .lead {
-    font-size: 17px;
+    font-size: 26px;
+  }
+
+  .lead_small {
+    font-size: 22px;
   }
 
   .section-header-5 {
-    font-size:45px;
+    font-size:35px;
   }
 
 }
@@ -438,7 +442,7 @@ body {
   }
 
   .section-header-5 {
-    font-size: 90px;
+    font-size: 64px;
     margin-top: 10px;
   }
 }
