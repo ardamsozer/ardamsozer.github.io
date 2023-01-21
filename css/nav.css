@@ -64,11 +64,11 @@
 .transparent .dropdown .nav-button,
 .transparent .dropdown .nav-button:hover,
 .transparent .dropdown .is-active .nav-button {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(265, 265, 256, 0.85);
 }
 
 .transparent #center-header .nav-button::after {
-  border-color: rgba(0, 0, 0, 0.8) transparent transparent;
+  border-color: rgba(265, 265, 256, 0.85) transparent transparent;
 }
 
 
@@ -76,7 +76,7 @@
 .divider {
   background-color: white;
   transition: background-color 300ms linear;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
   transition: all .5s;
   -webkit-transition: all .5s;
   box-shadow: 0 .2px 3px #aaa;
