@@ -7,8 +7,8 @@
 /** Header *******************************************/
 .header {
   position: fixed;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   z-index: 10;
   width: 100%;
   height: 70px;
@@ -51,7 +51,7 @@
   font-weight: 600;
   padding: 1em;
   white-space: nowrap;
-  font-family: font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 .nav-button:hover {
@@ -64,19 +64,19 @@
 .transparent .dropdown .nav-button,
 .transparent .dropdown .nav-button:hover,
 .transparent .dropdown .is-active .nav-button {
-  color: rgba(265,265,256,0.85);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .transparent #center-header .nav-button::after {
-  border-color: rgba(265,265,256,0.85) transparent transparent;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent;
 }
 
 
 /** Header Scrolled ********************************/
 .divider {
-  background-color:white;
+  background-color: white;
   transition: background-color 300ms linear;
-  color: white;
+  color: rgba(0, 0, 0, 0.8);
   transition: all .5s;
   -webkit-transition: all .5s;
   box-shadow: 0 .2px 3px #aaa;
@@ -110,7 +110,7 @@
   /* used to be relative */
   position: absolute;
   left: 20px;
-  top:-30px;  
+  top: -30px;
   display: inherit;
   align-items: center;
   content: url(../pics/M.png);
@@ -131,7 +131,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 40px;
-  top:-5px;
+  top: -5px;
   height: 85px;
 }
 
@@ -139,7 +139,7 @@
 /** Dropdown Content ************************************/
 .dropdown-content {
   background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
 
@@ -223,12 +223,12 @@
     left: 5%;
     right: 5%;
   }
-  
+
   .dropdown.menu {
     box-shadow: 0 .2px 3px #aaa;
   }
 
-  #center-header > li {
+  #center-header>li {
     width: 100%;
     padding: 0 5%;
   }
