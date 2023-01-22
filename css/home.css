@@ -172,6 +172,9 @@ body {
     border-radius: 5px;
   }
 
+  #nba_image {
+    height: 80px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -642,13 +645,6 @@ a {
   font-size: 30px;
 }
 
-@media only screen and (max-width: 576px) {
-
-  #nba_image {
-    height: 95px;
-  }
-
-}
 
 div.scrollmenu {
   background-color: #333;
