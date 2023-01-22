@@ -150,6 +150,7 @@ body {
     font-size:35px;
   }
 
+
 }
 
 
@@ -196,7 +197,7 @@ body {
     height: 200px;
   }
   #nba_img {
-    height:100px;
+    height:85px;
   }
 }
 
@@ -654,3 +655,4 @@ div.scrollmenu {
   overflow: auto;
   white-space: nowrap;
 }
+
