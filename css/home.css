@@ -19,7 +19,7 @@ body {
 /*Landing*/
 .home {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../pics/kobe1_gettyimages.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../pics/kobe1_gettyimages.jpeg);
 
   /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/website3/home3/SyrianRefugeeWomenGreece1400px.jpg); */
 
@@ -106,9 +106,9 @@ body {
 
 .lead_small{
   color: #888;
-  font-size: 26px;
-  line-height: 1.1666666667;
-  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 400;
   letter-spacing: .009em;
   font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
 }
@@ -143,7 +143,7 @@ body {
   }
 
   .lead_small {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .section-header-5 {
@@ -190,8 +190,7 @@ body {
     height: 500px;
   }
   #nba_img {
-    padding-left:120px;
-    height:150px;
+    height:100px;
   }
 }
 
@@ -200,7 +199,7 @@ body {
     height: 200px;
   }
   #nba_img {
-    height:85px;
+    height:75px;
   }
 }
 
@@ -446,7 +445,7 @@ body {
   }
 
   .section-header-5 {
-    font-size: 64px;
+    font-size: 52px;
     margin-top: 10px;
   }
 }
