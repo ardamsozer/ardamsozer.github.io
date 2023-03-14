@@ -1,3 +1,23 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "ardamsozer@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
 <html class="animated fadeIn">
 
@@ -192,63 +212,19 @@
                     <h2 class="section-header-5">Get in touch</h2><br>
                     <!-- <h4 class="section-header-1">&#8212 How It Works</h4> -->
                     <!-- <h2 class="section-header-2">Have Your Own Custom Mask</h2> -->
-                    <form novalidate="novalidate">
-                        <div class="field has-floating-label">
-                            <div class="control"><input aria-required="true"
-                                    aria-labelledby="emailLabel" type="text" class="input is-large"
-                                    placeholder="Email*"><label id="emailLabel" class="label">Email*</label> <!---->
-                            </div> <!---->
-                        </div>
-                        <div class="field has-floating-label">
-                            <div class="control">
-                                <div class="control is-clearfix"><textarea maxlength="1000"
-                                        aria-required="true" aria-labelledby="commentLabel" class="textarea"
-                                        placeholder="How can we help?*"></textarea><label id="commentLabel"
-                                        class="label">How can we help?*</label><!----><!----><small
-                                        class="help counter is-invisible"> 0 / 1000 </small></div> <!---->
-                            </div> <!---->
-                        </div>
-                        <div class="form-footer card">
-                            <div class="card-content">
-                                <div class="level">
-                                    <div class="level-left">
-                                        <div class="level-item">
-                                            <div class="field"><!---->
-                                                <div class="control">
-                                                    <div
-                                                        data-sitekey="6LeWUf8kAAAAAHmvgIEuMK6km9zcGkgDJdC7K94o"
-                                                        class="g-recaptcha">
-                                                        <div style="width: 304px; height: 78px;">
-                                                            <div><iframe title="reCAPTCHA"
-                                                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfOpyYTAAAAAN__8GyBK2JXl0E6gqE-PpvTsiCe&amp;co=aHR0cHM6Ly93d3cudGhvcm5lLmNvbTo0NDM.&amp;hl=en&amp;v=MuIyr8Ej74CrXhJDQy37RPBe&amp;size=normal&amp;cb=bv5hbt6vqwfa"
-                                                                    width="304" height="78" role="presentation"
-                                                                    name="a-smo9qkn4045" frameborder="0" scrolling="no"
-                                                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                                                            </div><textarea id="g-recaptcha-response"
-                                                                name="g-recaptcha-response" class="g-recaptcha-response"
-                                                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                                                        </div><iframe style="display: none;"></iframe>
-                                                    </div> <!----> <!---->
-                                                </div> <!---->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="level-right">
-                                        <div class="level-item">
-                                            <div class="field">
-                                                <div class="control"><button
-                                                        type="submit" disabled="disabled"
-                                                        class="button is-large is-dark"><!----><span><span
-                                                                class="icon is-small"><i
-                                                                    class="fal fa-paper-plane"></i></span> Send Email
-                                                        </span><!----></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
+
+
+
+                    <form action="" method="post">
+                        First Name: <input type="text" name="first_name"><br>
+                        Last Name: <input type="text" name="last_name"><br>
+                        Email: <input type="text" name="email"><br>
+                        Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+                        <input type="submit" name="submit" value="Submit">
                     </form>
+
 
                 </div>
 
