@@ -36,6 +36,11 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/thorne_styles.css">
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -70,26 +75,15 @@
             <nav id="center-header" class="dropdown menu horizontal" data-dropdown-menu>
                 <li>
                     <a class="nav-button nav-secondary" href="customfacemasks.html">Custom Face Masks</a>
-                    <!-- <ul class="dropdown-content">
-                        <li><a class="bottom-border" href="orthotics.html">CUSTOM ORTHOTICS</a></li>
-                        <li><a class="bottom-border" href="customfacemasks.html">CUSTOM FACE MASKS</a></li>
-                     </ul> -->
                 </li>
 
                 <li>
                     <a class="nav-button nav-secondary" href="about_us.html">About Us</a>
-                    <!-- <ul class="dropdown-content">
-                        <li><a class="bottom-border" href="/staff">Staff</a></li>
-                        <li><a class="bottom-border" href="/faq">FAQ</a></li>
-                    </ul> -->
                 </li>
 
 
                 <li>
                     <a class="nav-button nav-secondary" href="contact.html">Contact</a>
-                    <!-- <ul class="dropdown-content">
-                        <li><a class="bottom-border" href="/stories">Stories</a></li>
-                    </ul> -->
                 </li>
 
             </nav>
@@ -273,11 +267,6 @@
     <script src="https://unpkg.com/bootstrap-table@1.15.2/dist/bootstrap-table.min.js"></script>
     <script src="javascript/langAvailable.js"></script>
 
-    <script>
-        function onSubmit(token) {
-            document.getElementById("demo-form").submit();
-        }
-    </script>
 
 </body>
 
