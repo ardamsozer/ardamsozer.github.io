@@ -1,9 +1,3 @@
-<?php
-if($_POST["Message"]) {
-mail("john@johndoe.com", "Here is the sample subject line",
-$_POST["Insert Your Message"]. "From: jane@janedoe.com");
-}
-?>
 <!DOCTYPE html>
 <html class="animated fadeIn">
 
@@ -180,13 +174,14 @@ $_POST["Insert Your Message"]. "From: jane@janedoe.com");
     </section>
 
 
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeWUf8kAAAAAHmvgIEuMK6km9zcGkgDJdC7K94o"></script>
+    <script
+        src="https://www.google.com/recaptcha/enterprise.js?render=6LeWUf8kAAAAAHmvgIEuMK6km9zcGkgDJdC7K94o"></script>
     <script>
-        grecaptcha.enterprise.ready(function() {
-            grecaptcha.enterprise.execute('6LeWUf8kAAAAAHmvgIEuMK6km9zcGkgDJdC7K94o', {action: 'login'}).then(function(token) {
+        grecaptcha.enterprise.ready(function () {
+            grecaptcha.enterprise.execute('6LeWUf8kAAAAAHmvgIEuMK6km9zcGkgDJdC7K94o', { action: 'login' }).then(function (token) {
             });
         });
-        </script>
+    </script>
     <!--About Us Section-->
     <section class="pd-bottom">
         <div class="container">
@@ -196,18 +191,29 @@ $_POST["Insert Your Message"]. "From: jane@janedoe.com");
                 </div>
                 <div class="col-lg-6 order-lg-1 p-4" style="background-color: #f6f6f6; text-align: center;">
                     <h2 class="section-header-5">Get in touch</h2><br>
-                    <!-- <h4 class="section-header-1">&#8212 How It Works</h4> -->
-                    <!-- <h2 class="section-header-2">Have Your Own Custom Mask</h2> -->
+                    <p class="lead_small">Send us an email or call/text us at +1-586-243-5175</p>
 
 
 
 
 
-                    <form method="post" action="subscriberform.php">
-                    <textarea name="message"></textarea>
-                    <input type="submit">
-                    </form>
+                    <form
+                    action="https://formspree.io/f/xyyadgpe"
+                    method="POST">
+                    <div class="g-recaptcha" data-sitekey="6LeWUf8kAAAAAHmvgIEuMK6km9zcGkgDJdC7K94o"></div>
 
+                    <label>
+                      Email*:
+                      <input type="email" name="email">
+                    </label>
+                    <label>
+                      How can we help?*:
+                      <textarea name="message"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Send</button>
+                  </form>
+                  
 
 
                 </div>
