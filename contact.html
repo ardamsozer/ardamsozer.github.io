@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/thorne_styles.css">
     <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
     <script>
         function onSubmit(token) {
             document.getElementById("demo-form").submit();
@@ -161,51 +163,56 @@
                     <h2 class="section-header-5" id="professional_testimonials" style="text-align:left; color: white;">
                         Get in touch</h2>
                     <!-- <br><br><br> -->
-                    <!-- <p class="lead" style="color: white;">We are experts in the field of custom orthotics</p> -->
+                    <p class="lead" style="color: white;">Have questions for us?</p>
 
                 </div>
             </div>
         </div>
     </section>
-
+    <br><br>
 
     <!--About Us Section-->
     <section class="pd-bottom">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2 p-4">
-                    <img class="img-fluid rounded center-block" src="pics/jeremy_1.png" alt="">
-                </div>
-                <div class="col-lg-6 order-lg-1 p-4" style="background-color: #f6f6f6; text-align: center;">
-                    <h2 class="section-header-5">Get in touch</h2><br>
-                    <p class="lead_small">Send us an email or call/text us at +1-586-243-5175</p>
-
-
-
+                <div class="col-lg-8 col-sm-12" style="background-color: #a8d5ff; text-align: center;">
+                    <h2 class="section-header-5">Message us</h2><br>
 
 
                     <form action="https://formspree.io/f/xyyadgpe" method="POST" id="demo-form">
 
-                        <label>
+                        <label class="lead_small">
                             Email*:
-                            <input type="email" name="email">
+                            <input type="email" class="input w-input" maxlength="256" name="Phone-2" data-name="Phone 2"
+                                placeholder="e.g. jmurray.mhsrc@gmail.com" id="Phone-2" />
+
                         </label>
-                        <label>
+                        <label class="lead_small">
                             How can we help?*:
-                            <textarea name="message"></textarea>
+                            <textarea class="input w-input" name="message"></textarea>
                         </label>
+                        <br>
                         <!-- your other form fields go here -->
-                        <button class="g-recaptcha" data-sitekey="6LfjHRIlAAAAAAXJBpMwHFXwhFrH21M8mlWe8YFm"
-                            data-callback='onSubmit' data-action='submit'>Submit</button>
+                        <button class="g-recaptcha btn-secondary"
+                            data-sitekey="6LfjHRIlAAAAAAXJBpMwHFXwhFrH21M8mlWe8YFm" data-callback='onSubmit'
+                            data-action='submit'>Submit</button>
                     </form>
-
-
-
                 </div>
 
 
+                <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+                    <ul class="fa-ul">
+                        <li class="lead">
+                            <i class="fa-li fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                            Hellner and Associates <br>2233 Euler Rd <br>Brighton, MI 48114
+                        </li><br>
+                        <li class="middle"><i class="fa-li fa fa-phone fa-lg" aria-hidden="true"></i><a
+                                href="tel:+17326075579" class="lead">+1-586-243-5175</a></li><br>
+                        <li><i class="fa-li fa fa-envelope" aria-hidden="true"></i><a
+                                href="mailto:jmurray.mhsrc@gmail.com" class="lead">jmurray.mhsrc@gmail.com</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
     </section>
 
 
